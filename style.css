@@ -3,59 +3,158 @@
 3BACB6
 82DBD8
 B3E8E5*/
-
-
-*{ margin: 0;
-padding: 0%;}
-head{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-header img {width: 100%;}
-/*font*/
-/* Modify the background color */
-header{position:sticky;
-    top: 0%;
-z-index: 1;}
-header{background-color: #2F8F9D;}
-main{background-color:#3BACB6 }
-
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-/*font size*/
+/*----------------header----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 html {font-size:  62.5%;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
 header nav img { width: 70px }
-/*titulo*/
+*{ margin: 0;
+padding: 0%;}
+head{font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+body{ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 2.7rem;}
+header nav p{ color: #000000;font-size: 2rem;}
+header{position:sticky;
+    top: 0%;
+z-index: 2;}
+nav{ width:100%; background-color:  brown;}
+
+
+/*--------------------header------------------------*/
+/*--------------------main---------------------------*/
+/*---------carrousel--------------*/
+.slide{margin-top: 10px;}
+.slide img{height: 65vh;}
+/*---------carrousel--------------*/
+/*------------mainindex-----------*/
+main img{width: 100%;} 
 h1 {text-align: center;}
-.titulo{background-color:#3BACB6 ;}
-header nav{ position: fixed;top: 0%;
-}
-.fixed-top {z-index: 1;}
-.Excursion img{ width: auto;}
+.excursion{ margin-top: 50px;margin-bottom: 5px;margin-right:  2px;;margin-left: 2px;  gap: 3px;}
+.titulo{font-size: 4rem ;text-shadow:  -2px 1px 0px #000000;color: #000000;}
+.titulo2 h2{ font-size: 4rem;margin-top: 30px; ;}
+
+.pagos{ margin-top: 50px;margin-bottom: 50px;}
+main iframe{ display: flex;justify-content: center;}
+main iframe{margin-left: 10px; margin-top: 3rem;margin-bottom: 3rem;}
+.excursion button{ border: 3px solid #22A699; font-size: 2rem;color: #22A699; text-align: center;}
+.boton{ background-color: #B3E8E5;font-size: 2.7rem;}
+
+.logoantartida{margin-top: 30px;}
+.tituloc{font-size: 2.7rem;color:#E57C23;} 
+.textoc{ font-size: 2rem;color:#E57C23;display: flex;flex-direction: row;}
+.textob{border: 0.25rem solid #E57C23 ;}
+.textob{font-size: 2rem; color: #E57C23;}
+
+
+
+/*----------------mainindex----------------*/
+/*---------------footerindex---------------*/
+
+.margenesf{display: flex;flex-direction:row;align-items: center;}
+.textof{font-size: 2.3rem ;}
+.fuentep{ font-family: system-ui 'Segoe UI' 'Open Sans', 'Helvetica Neue', sans-serif ; }
+.location{font-size: 2rem;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+.pages ul{list-style: none;}
+.pages ul li a{
+        color: #B3E8E5;
+        transition: color .2s;
+        color:#08514d;
+          text-decoration: none;
+          list-style-type: none;
+        }
+.copyrightp{border-top:1px solid #0f0f0f;display: flex;flex-direction: row;justify-content: center;color: rgb(9, 9, 9);} 
+.copyright{ display: flex;flex-direction: row;justify-content: flex-end;}
+footer p {font-size: 2rem;color: #000000;}
+footer{ margin-right: 10px;margin-left: 10px;}
 .footer{
-    background: #82DBD8;
-    color:black;}
-    .pages ul{list-style: none;}
-    .pages ul li a{
-        color: black;
-        transition: color .2s;
-        &:hover{
-          text-decoration:none;
-          color:black;
-          }
-      }
-    .boton{ background-color: #B3E8E5;}
-    
-    .about-company{
-      i{font-size: 25px;}
-      a{
-        color:black;
-        transition: color .2s;
-        &:hover{color:#4180CB}
-      }
-    } 
-    .location{
-      i{font-size: 18px;}
-    }
-    .copyright p{border-top:1px solid black;} 
+  background:#82D8D8;font-size: 2.7rem;}
+  .margenesf{text-decoration: none;text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------foooterindex-----------------*/
+.viajes{ width: 100%;gap:3px;margin-top: 5px;margin-bottom: 5px;margin: right 2px;;margin-left: 2px;}
+/*img antartida y logo*/
   
-.footer{ display: flex;flex-direction: row; justify-content: space-between;}
-.fuente p{ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; }
 
 
+
+/*------------------------mainexcursion-------------*/
+
+
+.h1viajes{margin-bottom: 5rem;text-decoration: underline;}
+.h2viajes{margin-bottom:2rem;}
+.card-title{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;}
+
+
+/*------------------------mainexcursion---------------*/
+
+/*--------------------mainantartida------------*/
+
+.mapa{width: 600px;margin-left: 500px;margin-top: 100px;margin-bottom: 100px;}
+.textoant{ background-image: url(medios/mapa\ viaje.png);background-size: contain;}
+.textoant p{ font-size: 2rem;color: #F29727}
+.textoant h1{font: size 4rem;text-decoration: underline;color: #F29727;}
+.textoant h2{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;margin-top: 20px;color: #F29727;}
+.textoant h3{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;color: #F29727}
+.textoant h4{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;color: #F29727}
+.textoant h5{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;color: #F29727}
+.textoant h6{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;color: #F29727}
+
+
+.textoant p{ font-size: 2rem;color: #F29727}
+.textoant ol li{font-size: 2rem ;color: #F29727 }
+
+/*---------------------mainantartida---------------------*/
+/*--------------------mainnosotros---------------*/
+.nostexto h1{font-size: 3rem;margin-bottom: 30PX;text-decoration: underline;}
+.nostexto h2{font-size: 2.7rem;margin-bottom: 30PX;text-decoration: underline;}
+.nostexto p{font-size: 2rem;}
+.nostexto h3{font-size: 2.7rem;margin-bottom: 30PX;text-decoration: underline;}
+.nostexto h4{font-size: 2.7rem;margin-bottom: 30px;text-decoration: underline;}
+
+
+
+
+
+
+
+
+/*-----------------------mainnosotros----------------*/
+/*---------------nosotros-------------------------*/
+
+
+
+
+/*-----------nosotros-------------------*/
+/*titulo*/
+
+.banner{ margin-top: 5px;margin-bottom: 5px;}
+.ajuste{ image-orientation: center;height:200px;}
+
+.iconowhats{position: fixed;z-index: 1;bottom: 100px;right: 100px;}
+
+
+.tarjetas {background-color: aliceblue;width: 100%;
+height:auto; border: #000000;margin-bottom: 500px;}
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 600px){
+    header nav{display: flex; flex-direction: row ;justify-content: space-between;}
+      
+    }/* #82DBD8*/
+    
+    
