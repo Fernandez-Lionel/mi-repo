@@ -99,7 +99,7 @@ footer{ margin-right: 10px;margin-left: 10px;}
 /*--------------------mainantartida------------*/
 
 .mapa{width: 600px;margin-left: 500px;margin-top: 100px;margin-bottom: 100px;}
-.textoant{ background-image: url(medios/mapa\ viaje.png);background-size: contain;}
+.textoant{ background-image: url(../medios/mapa\ viaje.png);background-size: contain;}
 .textoant p{ font-size: 2rem;color: #F29727}
 .textoant h1{font: size 4rem;text-decoration: underline;color: #F29727;}
 .textoant h2{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;margin-top: 20px;color: #F29727;}
