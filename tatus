@@ -1,0 +1,54 @@
+[33mcommit e4760ce7b248c640f94c54b26b70fa9fa0436060[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Fernandez Lionel <lionel.alejandro.fernandez@gmail.com>
+Date:   Mon Jun 26 20:59:07 2023 -0300
+
+    recuperando lo perdido
+
+[33mcommit c78bda36e9bd1dc02402cbd0a13d9d336e7fd709[m
+Author: Fernandez Lionel <lionel.alejandro.fernandez@gmail.com>
+Date:   Mon Jun 26 20:54:29 2023 -0300
+
+    base index
+
+[33mcommit cb425753826260dc68f6d97744efeb2934ddbc8b[m
+Author: Fernandez Lionel <lionel.alejandro.fernandez@gmail.com>
+Date:   Mon Jun 26 20:50:56 2023 -0300
+
+    base
+
+[33mcommit bac4068a693e18c2c186f14ee361370a7b126e2b[m
+Merge: 2cfddf0 d4b0321
+Author: Fernandez Lionel <lionel.alejandro.fernandez@gmail.com>
+Date:   Mon Jun 26 20:33:02 2023 -0300
+
+    Merge branch 'rama'
+
+[33mcommit 2cfddf0764bbe17d230c3f95f09972a6e828c8d5[m
+Author: Fernandez Lionel <lionel.alejandro.fernandez@gmail.com>
+Date:   Mon Jun 26 20:11:07 2023 -0300
+
+    arreglo
+
+[33mcommit fd401bf6cbdf3b5dcbb3292f2081922366312b7c[m
+Author: Fernandez Lionel <lionel.alejandro.fernandez@gmail.com>
+Date:   Tue Jun 20 01:21:31 2023 -0300
+
+    falla
+
+[33mcommit d4b0321adaa782e2065eb90dd0d0b41e3eef3775[m[33m ([m[1;32mrama[m[33m)[m
+Author: Fernandez Lionel <lionel.alejandro.fernandez@gmail.com>
+Date:   Tue Jun 20 00:55:18 2023 -0300
+
+    cambio
+
+[33mcommit 5b8be12f23cc89ede5115f73efd535108982bf50[m
+Author: Fernandez Lionel <lionel.alejandro.fernandez@gmail.com>
+Date:   Mon Jun 12 21:07:15 2023 -0300
+
+    cambio completo
+
+[33mcommit 5fb04d72b7ed0a86f36961ea4157e9b9b0a27638[m[33m ([m[1;32mmi_rama[m[33m)[m
+Author: Fernandez Lionel <lionel.alejandro.fernandez@gmail.com>
+Date:   Thu Jun 8 23:18:11 2023 -0300
+
+    Mi primer commit
