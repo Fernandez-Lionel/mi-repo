@@ -89,8 +89,8 @@ footer{ margin-right: 10px;margin-left: 10px;}
 /*------------------------mainexcursion-------------*/
 
 
-.h1viajes{margin-bottom: 5rem;text-decoration: underline;}
-.h2viajes{margin-bottom:2rem;}
+.h1viajes{margin-bottom: 4rem;text-decoration: underline; font-size: 3rem;}
+.h2viajes{margin-bottom:2rem;font-size: 2.5rem;}
 .card-title{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;}
 
 
