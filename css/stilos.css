@@ -67,14 +67,27 @@ h1 {
 }
 
 .titulo {
+  color: cadetblue;
   font-size: 4rem;
-  text-shadow: -2px 1px 0px #000000;
-  color: #000000;
+  text-shadow: -2px 1px 0px black;
+  font-weight: bolder;
+  color: hsl(199, 85%, 46%);
+}
+
+.excursion p {
+  font-size: 2rem;
 }
 
 .titulo2 h2 {
-  font-size: 4rem;
-  margin-top: 30px;
+  font-size: 3rem;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.pagos img {
+  width: 1800px;
+  margin-left: 20px;
 }
 
 .pagos {
@@ -93,19 +106,18 @@ main iframe {
   margin-bottom: 3rem;
 }
 
-.excursion button {
-  border: 3px solid #22A699;
-  font-size: 2rem;
-  color: #22A699;
-  text-align: center;
-}
-
 .boton {
   font-size: 2.7rem;
 }
 
 .logoantartida {
   margin-top: 30px;
+  width: 1500px;
+  height: 800px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 80px;
 }
 
 .tituloc {
@@ -132,6 +144,9 @@ main iframe {
 /*---------carrousel--------------*/
 .slide {
   margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .slide img {
@@ -158,62 +173,371 @@ main iframe {
 }
 
 /*------------------------mainexcursion---------------*/
+.card-client {
+  background: #2cb5a0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #7cdacc;
+  box-shadow: 0 6px 10px rgb(207, 212, 222);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  border: 4px solid #7cdacc;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.user-picture svg {
+  width: 2.5rem;
+  fill: currentColor;
+}
+
+.name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background: #7cdacc;
+}
+
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
+
+/*--------------------------------------*/
+.uiverse {
+  font-weight: bolder;
+  position: relative;
+  display: flex;
+  background: #ffffff;
+  color: #000;
+  padding: 15px;
+  margin: 10px;
+  margin-left: 35%;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.uiverse span {
+  color: #068DA9;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #F2BE22;
+  color: #F2BE22;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+  position: absolute;
+  justify-content: center;
+  height: 8px;
+  width: 8px;
+  background: #F2BE22;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.uiverse:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+svg:hover span,
+svg:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.uiverse:hover,
+.uiverse:hover .tooltip,
+.uiverse:hover .tooltip::before {
+  background: linear-gradient(320deg, #176B87, #45CFDD);
+  color: #F6FA70;
+}
+
 .textoant {
-  background-image: url(../medios/mapa\ viaje.png);
-  background-size: contain;
+  background-image: url(../medios/antartida2.0.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: top left right bottom;
+  background-attachment: fixed;
+}
+
+.list-ant {
+  list-style: none;
+  color: black;
 }
 
 .textoant p {
   font-size: 2rem;
-  color: #F29727;
+  color: black;
+  font-weight: bolder;
 }
 .textoant h1 {
-  font: size 4rem;
+  font-size: 3.5rem;
   text-decoration: underline;
-  color: #F29727;
+  color: #D21312;
+  font-weight: bolder;
 }
 .textoant h2 {
   font-size: 3rem;
-  text-decoration: underline;
+  text-decoration: none;
   margin-bottom: 10px;
   margin-top: 20px;
-  color: #F29727;
+  color: #D21312;
 }
 .textoant h3 {
   font-size: 3rem;
   text-decoration: underline;
   margin-bottom: 10px;
-  color: #F29727;
+  color: #D21312;
 }
 .textoant h4 {
   font-size: 3rem;
   text-decoration: underline;
   margin-bottom: 10px;
-  color: #F29727;
+  color: #D21312;
 }
 .textoant h5 {
   font-size: 3rem;
   text-decoration: underline;
   margin-bottom: 10px;
-  color: #F29727;
+  color: #D21312;
 }
 .textoant h6 {
   font-size: 3rem;
   text-decoration: underline;
   margin-bottom: 10px;
-  color: #F29727;
+  color: #D21312;
 }
 
 .textoant ol li {
   font-size: 2rem;
-  color: #F29727;
+  color: black;
+  font-weight: bolder;
 }
 
-.mapa {
-  width: 600px;
-  margin-left: 500px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+/*-------------------*/
+/* Yoinked from CodePen, but improved the animation
+so that it is smooth among other more minor things */
+.plan-card {
+  background: #fff;
+  width: 20rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  border-bottom: 4px solid #000446;
+  box-shadow: 0 6px 30px rgba(207, 212, 222, 0.3);
+  font-family: "Poppins", sans-serif;
+}
+
+.plan-card h2 {
+  margin-bottom: 15px;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.plan-card h2 span {
+  display: block;
+  margin-top: -4px;
+  color: #4d4d4d;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.etiquet-price {
+  position: relative;
+  background: #fdbd4a;
+  width: 17.46rem;
+  margin-left: -0.65rem;
+  padding: 0.2rem 1.2rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.etiquet-price p {
+  margin: 0;
+  padding-top: 0.4rem;
+  display: flex;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.etiquet-price p:before {
+  content: "$";
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.etiquet-price p:after {
+  content: "/ por adulto";
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.etiquet-price div {
+  position: absolute;
+  bottom: -23px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid #c58102;
+  border-bottom: 10px solid transparent;
+  border-right: 13px solid transparent;
+  z-index: -6;
+}
+
+.benefits-list {
+  margin-top: 16px;
+}
+
+.benefits-list ul {
+  padding: 0;
+  font-size: 14px;
+}
+
+.benefits-list ul li {
+  color: #4d4d4d;
+  list-style: none;
+  margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.benefits-list ul li svg {
+  width: 0.9rem;
+  fill: currentColor;
+}
+
+.benefits-list ul li span {
+  font-weight: 300;
+}
+
+.button-get-plan {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.button-get-plan a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000446;
+  color: #fff;
+  padding: 15px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.button-get-plan a:hover {
+  transform: translateY(-3%);
+  box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
+}
+
+.button-get-plan .svg-rocket {
+  margin-right: 20px;
+  width: 0.9rem;
+  fill: currentColor;
 }
 
 .form-container {
@@ -777,6 +1101,10 @@ header nav p {
   color: #B3E8E5;
 }
 
+button {
+  border: none;
+}
+
 @media only screen and (min-width: 600px) {
   header nav {
     display: flex;
@@ -785,6 +1113,10 @@ header nav p {
   }
 }
 /*---------------footerindex---------------*/
+a {
+  text-decoration: none;
+}
+
 .margenesf {
   display: flex;
   flex-direction: row;
@@ -856,6 +1188,192 @@ footer ul li {
   margin-bottom: 5px;
   margin: right 2px;
   margin-left: 2px;
+}
+
+/**/
+.buttonc {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: #E57C23;
+  border-radius: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: 0.5s;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.buttonc:hover {
+  background-color: #FC4F00;
+  transition-duration: 0.5s;
+}
+
+.buttonc:active {
+  transform: scale(0.97);
+  transition-duration: 0.2s;
+}
+
+.buttonc:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
+/*----------------------boton excurciones--------------------------*/
+.btn {
+  background-color: #FC4F00;
+}
+
+.button2 {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 12px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.card-footer {
+  margin-bottom: 10px;
+}
+
+/**------------------------------**/
+.Btn {
+  position: relative;
+  width: 180px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(255, 136, 0);
+  color: white;
+  box-shadow: 0px 10px 10px rgb(255, 198, 146) inset, 0px 5px 10px rgba(5, 5, 5, 0.212), 0px -10px 10px rgb(255, 102, 0) inset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Btn::before {
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(250, 250, 250, 0.678);
+  content: "";
+  filter: blur(1px);
+  top: 7px;
+  border-radius: 50%;
+}
+
+.Btn::after {
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(250, 250, 250, 0.137);
+  content: "";
+  filter: blur(1px);
+  bottom: 7px;
+  border-radius: 50%;
+}
+
+.Btn:hover {
+  animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 /*# sourceMappingURL=stilos.css.map */

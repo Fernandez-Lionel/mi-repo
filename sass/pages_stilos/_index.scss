@@ -2,22 +2,24 @@
 main img{width: 100%;} 
 h1 {text-align: center;}
 .excursion{ margin-top: 50px;margin-bottom: 5px;margin-right:  2px;;margin-left: 2px;  gap: 3px;}
-.titulo{font-size: 4rem ;text-shadow:  -2px 1px 0px #000000;color: #000000;}
-.titulo2 h2{ font-size: 4rem;margin-top: 30px; ;}
-
+.titulo {color: cadetblue   ;font-size: 4rem ;text-shadow:  -2px 1px 0px black;font-weight: bolder ;color: hsl(199, 85%, 46%);
+ }
+ .excursion p{ font-size: 2rem;}
+ 
+.titulo2 h2{ font-size: 3rem;margin-top: 40px;margin-left: 10px ;margin-bottom: 10px ;}
+.pagos img {width: 1800px;margin-left: 20px;}
 .pagos{ margin-top: 50px;margin-bottom: 50px;}
 main iframe{ display: flex;justify-content: center;}
 main iframe{margin-left: 10px; margin-top: 3rem;margin-bottom: 3rem;}
-.excursion button{ border: 3px solid #22A699; font-size: 2rem;color: #22A699; text-align: center;}
-.boton{ font-size: 2.7rem;
+.boton{font-size: 2.7rem;
 
 }
-.logoantartida{margin-top: 30px;}
+.logoantartida{margin-top: 30px; width: 1500px;height: 800px;margin-top: 60px;margin-bottom: 100px;margin-left: 100px;margin-right:80px ;}
 .tituloc{font-size: 2.7rem;color:#E57C23;} 
 .textoc{ font-size: 2rem;color:#E57C23;display: flex;flex-direction: row;}
 .textob{border: 0.25rem solid #E57C23 ;}
 .textob{font-size: 2rem; color: #E57C23;}
  /*---------carrousel--------------*/
-.slide{margin-top: 10px;}
+.slide{margin-top: 10px;margin-bottom: 10px;margin-left: 50px;margin-right: 50px;}
 .slide img{height: 65vh;}
 /*---------carrousel--------------*/
