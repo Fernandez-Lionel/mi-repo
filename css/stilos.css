@@ -788,254 +788,79 @@ so that it is smooth among other more minor things */
 }
 
 /**/
-.form-container {
-  width: 320px;
-  border-radius: 0.75rem;
-  background-color: rgb(17, 24, 39);
-  padding: 2rem;
-  color: rgb(243, 244, 246);
+/*-----------nosotros-------------------*/
+/*titulo*/
+.banner {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.title {
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
+.ajuste {
+  image-orientation: center;
+  height: 200px;
 }
 
-.form {
-  margin-top: 1.5rem;
-}
-
-.input-group {
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.input-group label {
-  display: block;
-  color: rgb(156, 163, 175);
-  margin-bottom: 4px;
-}
-
-.input-group input {
+.tarjetas {
+  background-color: aliceblue;
   width: 100%;
-  border-radius: 0.375rem;
-  border: 1px solid rgb(55, 65, 81);
-  outline: 0;
-  background-color: rgb(17, 24, 39);
-  padding: 0.75rem 1rem;
-  color: rgb(243, 244, 246);
+  height: auto;
+  border: #000000;
+  margin-bottom: 500px;
 }
 
-.input-group input:focus {
-  border-color: rgb(167, 139, 250);
-}
-
-.forgot {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: rgb(156, 163, 175);
-  margin: 8px 0 14px 0;
-}
-
-.forgot a, .signup a {
-  color: rgb(243, 244, 246);
+.nostexto h1 {
+  font-size: 3rem;
+  margin-bottom: 30PX;
   text-decoration: none;
-  font-size: 14px;
+  color: white;
 }
 
-.forgot a:hover, .signup a:hover {
-  text-decoration: underline rgb(167, 139, 250);
+h2 {
+  font-size: 2.7rem;
+  margin-bottom: 30PX;
+  text-decoration: none;
+  color: white;
 }
 
-.sign {
-  display: block;
-  width: 100%;
-  background-color: rgb(167, 139, 250);
-  padding: 0.75rem;
-  text-align: center;
-  color: rgb(17, 24, 39);
-  border: none;
-  border-radius: 0.375rem;
-  font-weight: 600;
+p {
+  font-size: 2rem;
 }
 
-.social-message {
-  display: flex;
-  align-items: center;
-  padding-top: 1rem;
+.tit {
+  font-size: 2.7rem;
+  margin-bottom: 30PX;
+  text-decoration: underline;
 }
 
-.line {
-  height: 1px;
-  flex: 1 1 0%;
-  background-color: rgb(55, 65, 81);
+.tit4 {
+  font-size: 5rem;
+  margin-bottom: 30px;
+  text-decoration: underline;
 }
 
-.social-message .message {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: rgb(156, 163, 175);
+.tit5 {
+  font-size: 5rem;
+  margin-bottom: 30px;
+  text-decoration: underline;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
+.display6 {
+  font-weight: bolder;
+  font-size: 3rem;
 }
 
-.social-icons .icon {
-  border-radius: 0.125rem;
-  padding: 0.75rem;
-  border: none;
-  background-color: transparent;
-  margin-left: 8px;
+.nostexto {
+  background-image: url(../medios/bandera.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: top left right bottom;
+  background-attachment: fixed;
 }
 
-.social-icons .icon svg {
-  height: 1.25rem;
-  width: 1.25rem;
-  fill: #fff;
+.estilonos {
+  color: white;
 }
 
-.signup {
-  text-align: center;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: rgb(156, 163, 175);
-}
-
-/**/
-/**/
-/* Cool share button made by: csozi | Website: english.csozi.hu*/
-.buttons {
-  position: fixed;
-  z-index: 1;
-  bottom: 100px;
-  right: 100px;
-}
-
-.buttons {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  height: fit-content;
-  width: fit-content;
-  transition: 0.3s;
-  border-radius: 50%;
-}
-
-.buttons:hover {
-  padding: 60px;
-}
-
-.buttons:hover .button {
-  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
-}
-
-.main-button {
-  position: relative;
-  display: grid;
-  place-items: center;
-  padding: 10px;
-  border: none;
-  background: #e8e8e8;
-  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
-  border-radius: 50%;
-  transition: 0.2s;
-  z-index: 100;
-}
-
-.button {
-  position: absolute;
-  display: grid;
-  place-items: center;
-  padding: 10px;
-  border: none;
-  background: #e8e8e8;
-  box-shadow: 5px 5px 12px rgba(202, 202, 202, 0), -5px -5px 12px rgba(255, 255, 255, 0);
-  transition: 0.3s;
-  border-radius: 50%;
-}
-
-.discord-button:hover {
-  background: #5865F2;
-}
-
-.buttons:hover .discord-button {
-  translate: 70px 0px;
-  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
-}
-
-.twitter-button:hover {
-  background: #1CA1F1;
-}
-
-.buttons:hover .twitter-button {
-  translate: 47px -47px;
-  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
-}
-
-.reddit-button:hover {
-  background: #FF4500;
-}
-
-.buttons:hover .reddit-button {
-  translate: 0px -70px;
-  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
-}
-
-.messenger-button:hover {
-  background: #0093FF;
-}
-
-.buttons:hover .messenger-button {
-  translate: -47px -47px;
-  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
-}
-
-.pinterest-button:hover {
-  background: #F0002A;
-}
-
-.buttons:hover .pinterest-button {
-  translate: -70px 0px;
-  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
-}
-
-.instagram-button:hover {
-  background: #F914AF;
-}
-
-.buttons:hover .instagram-button {
-  translate: -47px 47px;
-  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
-}
-
-.snapchat-button:hover {
-  background: #FFFC00;
-}
-
-.buttons:hover .snapchat-button {
-  translate: 0px 70px;
-  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
-}
-
-.whatsapp-button:hover {
-  background: #25D366;
-}
-
-.buttons:hover .whatsapp-button {
-  translate: 47px 47px;
-  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
-}
-
-/**/
 .lista {
   color: black;
   transition: color 0.2s;
