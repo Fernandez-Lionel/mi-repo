@@ -13,11 +13,8 @@ h3{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;color: #D21312
 h4{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;color: #D21312}
 h5{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;color: #D21312}
 h6{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;color: #D21312}
+ol li{font-size: 2rem ;color: black;font-weight: bolder;}
 }
-
-
-.textoant ol li{font-size: 2rem ;color: black;font-weight: bolder;}
-
 
 /*-------------------*/
 /* Yoinked from CodePen, but improved the animation
@@ -40,15 +37,13 @@ so that it is smooth among other more minor things */
   margin-bottom: 15px;
   font-size: 27px;
   font-weight: 600;
-}
-
-.plan-card h2 span {
+ span {
   display: block;
   margin-top: -4px;
   color: #4d4d4d;
   font-size: 12px;
-  font-weight: 400;
-}
+  font-weight: 400;}
+ }
 
 .etiquet-price {
   position: relative;
