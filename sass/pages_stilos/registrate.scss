@@ -259,24 +259,25 @@
 
 
 /**/
-.formulario{margin: 40px}
-.fondFormulario{background-image: url(..medios/fondoregistrate.jpg);
+
+.fondformulario {background-image: url(../medios/fondoregistrate.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   position:top left right bottom; 
-  background-attachment: fixed;}
-  .palabrasreg{display: flex;flex-direction: row;justify-content:right;}
+  background-attachment: fixed;
+}
+  .palabrasreg{display: flex;flex-direction: row;justify-content:right; text-shadow: -4px 1px 10px rgba(255,243,243,1);;}
   .estilonos{color:white}
   .estiloreg{display: flex;flex-direction: row;justify-content:left ;}
   .alineaciom{display: flex;flex-direction: row;align-items: first baseline;}
   .container {
-    display: table;
-    width: 100%;
-  }
+      display: table;
+      width: 100%;
+    }
 
-  .left-column,
-  .right-column {
-    display: table-cell;
-    vertical-align: top;
-    padding: 10px;
-  }
+    .left-column,
+    .right-column {
+      display: table-cell;
+      vertical-align: top;
+      padding: 10px;
+    }

@@ -52,9 +52,7 @@ so that it is smooth among other more minor things */
   margin-left: -0.65rem;
   padding: .2rem 1.2rem;
   border-radius: 5px 0 0 5px;
-}
-
-.etiquet-price p {
+ p {
   margin: 0;
   padding-top: .4rem;
   display: flex;
@@ -62,21 +60,21 @@ so that it is smooth among other more minor things */
   font-weight: 500;
 }
 
-.etiquet-price p:before {
+ p:before {
   content: "$";
   margin-right: 5px;
   font-size: 15px;
   font-weight: 300;
 }
 
-.etiquet-price p:after {
+p:after {
   content: "/ por adulto";
   margin-left: 5px;
   font-size: 15px;
   font-weight: 300;
 }
 
-.etiquet-price div {
+div {
   position: absolute;
   bottom: -23px;
   right: 0px;
@@ -87,17 +85,17 @@ so that it is smooth among other more minor things */
   border-right: 13px solid transparent;
   z-index: -6;
 }
-
+}
 .benefits-list {
   margin-top: 16px;
-}
 
-.benefits-list ul {
+
+ ul {
   padding: 0;
   font-size: 14px;
 }
 
-.benefits-list ul li {
+ul li {
   color: #4d4d4d;
   list-style: none;
   margin-bottom: .2rem;
@@ -106,22 +104,22 @@ so that it is smooth among other more minor things */
   gap: .5rem;
 }
 
-.benefits-list ul li svg {
+ul li svg {
   width: .9rem;
   fill: currentColor;
 }
 
-.benefits-list ul li span {
+ ul li span {
   font-weight: 300;
 }
-
+}
 .button-get-plan {
   display: flex;
   justify-content: center;
   margin-top: 1.2rem;
-}
 
-.button-get-plan a {
+
+a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,11 +134,11 @@ so that it is smooth among other more minor things */
   transition: all 0.3s ease;
 }
 
-.button-get-plan a:hover {
+ a:hover {
   transform: translateY(-3%);
   box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
 }
-
+}
 .button-get-plan .svg-rocket {
   margin-right: 20px;
   width: .9rem;

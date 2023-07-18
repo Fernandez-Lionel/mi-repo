@@ -1,15 +1,9 @@
 /*-----------nosotros-------------------*/
 /*titulo*/
-
 .banner{ margin-top: 5px;margin-bottom: 5px;}
 .ajuste{ image-orientation: center;height:200px;}
-
-
-
-
 .tarjetas {background-color: aliceblue;width: 100%;
 height:auto; border: #000000;margin-bottom: 500px;}
-.nostexto h1{font-size: 3rem;margin-bottom: 30PX;text-decoration: none;color: white;}
 h2{font-size: 2.7rem;margin-bottom: 30PX;text-decoration: none;color:white}
 p{font-size: 2rem;}
 .tit{font-size: 2.7rem;margin-bottom: 30PX;text-decoration: underline;}
@@ -20,5 +14,7 @@ p{font-size: 2rem;}
     background-size:cover;
     background-repeat: no-repeat;
     position:top left right bottom; 
-    background-attachment: fixed;}
-    .estilonos{color:white}
+    background-attachment: fixed;
+    h1{font-size: 3rem;margin-bottom: 30PX;text-decoration: none;color: white;}
+}
+.estilonos{color:white}

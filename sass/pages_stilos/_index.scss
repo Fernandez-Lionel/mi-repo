@@ -1,25 +1,36 @@
 /*------------mainindex-----------*/
 main img{width: 100%;} 
 h1 {text-align: center;}
-.excursion{ margin-top: 50px;margin-bottom: 5px;margin-right:  2px;;margin-left: 2px;  gap: 3px;}
-.titulo {color: cadetblue   ;font-size: 4rem ;text-shadow:  -2px 1px 0px black;font-weight: bolder ;color: hsl(199, 85%, 46%);
- }
- .excursion p{ font-size: 2rem;}
+.excursion{ margin-top: 50px;margin-bottom: 5px;margin-right:  2px;;margin-left: 2px;  gap: 3px;
  
+  p{ font-size: 2rem;}
+}
+ .titulo {color: cadetblue   ;font-size: 4rem ;text-shadow:  -2px 1px 0px black;font-weight: bolder ;color: hsl(199, 85%, 46%);}
+
 .titulo2 h2{ font-size: 3rem;margin-top: 40px;margin-left: 10px ;margin-bottom: 10px ;}
 .pagos img {width: 1800px;margin-left: 20px;}
 .pagos{ margin-top: 50px;margin-bottom: 50px;}
-main iframe{ display: flex;justify-content: center;}
-main iframe{margin-left: 10px; margin-top: 3rem;margin-bottom: 3rem;}
+main iframe{ display: flex;justify-content: center;
+margin-left: 10px; margin-top: 3rem;margin-bottom: 3rem;}
 .boton{font-size: 2.7rem;
 
 }
 .logoantartida{margin-top: 30px; width: 1500px;height: 800px;margin-top: 60px;margin-bottom: 100px;margin-left: 100px;margin-right:80px ;}
 .tituloc{font-size: 2.7rem;color:#E57C23;} 
 .textoc{ font-size: 2rem;color:#E57C23;display: flex;flex-direction: row;}
-.textob{border: 0.25rem solid #E57C23 ;}
-.textob{font-size: 2rem; color: #E57C23;}
- /*---------carrousel--------------*/
-.slide{margin-top: 10px;margin-bottom: 10px;margin-left: 50px;margin-right: 50px;}
-.slide img{height: 65vh;}
+.textob{border: 0.25rem solid #E57C23 ;
+font-size: 2rem; color: #E57C23;}
+ /*---------carrousel--------------*/   
+.slide{margin-top: 10px;margin-bottom: 10px;margin-left: 50px;margin-right: 50px;
+img{height: 65vh;}
+}
+@mixin encabezado ($font, $textd, $color)   {
+    font-size: $font;
+    text-decoration: $textd;
+    color: $color;
+
+}
+.titlecard{
+    @include encabezado(3rem,none, #2F8F9D);
+    text-shadow: -13px 3px 17px rgba(0,0,0,0.31);}
 /*---------carrousel--------------*/
