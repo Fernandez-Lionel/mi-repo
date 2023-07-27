@@ -281,3 +281,34 @@
       vertical-align: top;
       padding: 10px;
     }
+
+
+/* Estilo para el footer */
+footer {
+  width: 100%;
+  background-color: #f0f0f0; /* Ajusta el color de fondo según tu preferencia */
+  padding: 20px 0; /* Ajusta el espaciado interno superior e inferior según tu preferencia */
+  color: #444; /* Ajusta el color del texto según tu preferencia */
+}
+
+/* Estilo para el contenido del footer */
+footer .row {
+  margin: 0; /* Elimina los márgenes predeterminados del contenedor .row */
+}
+
+/* Estilo para los elementos dentro del footer */
+footer p, footer a {
+  margin: 0; /* Elimina los márgenes predeterminados de los párrafos y enlaces */
+  color: #444; /* Ajusta el color del texto según tu preferencia */
+}
+
+/* Estilo para los enlaces en el footer */
+footer a {
+  text-decoration: none; /* Elimina la subrayado de los enlaces */
+  color: #007bff; /* Ajusta el color de los enlaces según tu preferencia */
+}
+
+/* Estilo para los enlaces en el footer al pasar el mouse */
+footer a:hover {
+  color: #0056b3; /* Ajusta el color del enlace al pasar el mouse según tu preferencia */
+}

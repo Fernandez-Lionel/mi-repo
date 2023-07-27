@@ -1,36 +1,522 @@
 /*------------mainindex-----------*/
 main img{width: 100%;} 
 h1 {text-align: center;}
+/* Estilos personalizados */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+
+
+/*---------------------carrousel*/
 .excursion{ margin-top: 50px;margin-bottom: 5px;margin-right:  2px;;margin-left: 2px;  gap: 3px;
  
   p{ font-size: 2rem;}
 }
- .titulo {color: cadetblue   ;font-size: 4rem ;text-shadow:  -2px 1px 0px black;font-weight: bolder ;color: hsl(199, 85%, 46%);}
+/*-----------------------carrousel*/
+/* Estilos para .titulo */
+.titulo {
+  color: cadetblue;
+  font-size: 3rem;
+  text-shadow: -2px 1px 0px black;
+  font-weight: bold;
+  color: #0B666A;
 
-.titulo2 h2{ font-size: 3rem;margin-top: 40px;margin-left: 10px ;margin-bottom: 10px ;}
-.pagos img {width: 1800px;margin-left: 20px;}
-.pagos{ margin-top: 50px;margin-bottom: 50px;}
-main iframe{ display: flex;justify-content: center;
-margin-left: 10px; margin-top: 3rem;margin-bottom: 3rem;}
-.boton{font-size: 2.7rem;
-
+  /* Estilos para .titulodos anidado dentro de .titulo */
+  .titulodos {
+    font-size: 3rem;
+    text-align: center;
+    color: #000000;
+  }
 }
-.logoantartida{margin-top: 30px; width: 1500px;height: 800px;margin-top: 60px;margin-bottom: 100px;margin-left: 100px;margin-right:80px ;}
-.tituloc{font-size: 2.7rem;color:#E57C23;} 
-.textoc{ font-size: 2rem;color:#E57C23;display: flex;flex-direction: row;}
-.textob{border: 0.25rem solid #E57C23 ;
-font-size: 2rem; color: #E57C23;}
+
+/* Estilos para .pagos */
+.pagos {
+  margin-top: 300px;
+  margin-bottom: 50px;
+
+  /* Estilos para main iframe anidado dentro de .pagos */
+  main iframe {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Estilos para .boton */
+.boton {
+  font-size: 2.7rem;
+}
+
+/* Estilos para .tituloc */
+.tituloc {
+  font-size: 2.7rem;
+  color: #E57C23;
+  margin-bottom: 30px;
+}
+
+/* Estilos para .textoc */
+.textoc {
+  flex: 1; /* Permite que este texto ocupe el espacio disponible */
+  font-size: 2rem;
+  color: #F38322;
+  display: flex;
+  flex-direction: row;
+  font-weight: bolder;
+
+  /* Estilos para .textob anidado dentro de .textoc */
+  .textob {
+    border: 0.25rem solid #E57C23;
+    font-size: 2rem;
+    color: #E57C23;
+  }
+}
+
  /*---------carrousel--------------*/   
-.slide{margin-top: 10px;margin-bottom: 10px;margin-left: 50px;margin-right: 50px;
-img{height: 65vh;}
-}
+
 @mixin encabezado ($font, $textd, $color)   {
     font-size: $font;
     text-decoration: $textd;
     color: $color;
 
 }
-.titlecard{
-    @include encabezado(3rem,none, #2F8F9D);
-    text-shadow: -13px 3px 17px rgba(0,0,0,0.31);}
+
 /*---------carrousel--------------*/
+.carta {
+  box-shadow: -1px 1px 5px 7px rgba(148, 148, 148, 0.27);
+  -webkit-box-shadow: -1px 1px 5px 7px rgba(148, 148, 148, 0.27);
+  -moz-box-shadow: -1px 1px 5px 7px rgba(148, 148, 148, 0.27);
+
+  .rainbow-hover {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff7576;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    position: relative;
+    line-height: 24px;
+    border-radius: 9px;
+    box-shadow: 0px 1px 2px #2B3044, 0px 4px 16px #2B3044;
+    transform-style: preserve-3d;
+    transform: scale(var(--s, 1)) perspective(600px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    perspective: 600px;
+    transition: transform 0.1s;
+
+    &:active {
+      transition: 0.3s;
+      transform: scale(0.93);
+    }
+  }
+
+  .sp {
+    background: linear-gradient(90deg, #866ee7, #ea60da, #ed8f57, #fbd41d, #2cca91);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+  }
+}
+
+.logoantartida {
+  padding: 300px;
+}
+
+.bag {
+  background-color: #f1f1f1 !important;
+  width: 100%;
+}
+
+/* Estilo inicial del navbar transparente */
+.navbar {
+  z-index: -1;
+  background-color: transparent;
+  color: #f1f1f1;
+  transition: background-color 0.3s ease-in-out;
+
+  /* Estilo del navbar al hacer scroll */
+  &.navbar-scrolled {
+    background-color: #fff; /* Cambia el color aquí al color deseado */
+  }
+
+  height: 110px; /* Cambia la altura de la barra de navegación a 80px */
+  font-size: 18px; /* Cambia el tamaño del texto en la barra de navegación a 16px */
+
+  /* Estilos personalizados */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo y letra */
+
+  .nav-link {
+    color: red; /* Cambia el color de letra de los enlaces cuando se hace scroll */
+  }
+}
+/*---------------------------navbar transparente*/
+
+
+/*-------------------------------------------------imagenfaro*/
+figure.snip1477 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
+}
+figure.snip1477 *,
+figure.snip1477 *:before,
+figure.snip1477 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.55s ease;
+  transition: all 0.55s ease;
+}
+figure.snip1477 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+  opacity: 0.9;
+}
+figure.snip1477 .title {
+  position: absolute;
+  top: 58%;
+  left: 25px;
+  padding: 5px 10px 10px;
+}
+figure.snip1477 .title:before,
+figure.snip1477 .title:after {
+  height: 2px;
+  width: 2000px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+figure.snip1477 .title:before {
+  top: 0;
+  left: 10px;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+figure.snip1477 .title:after {
+  bottom: 0;
+  right: 10px;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+figure.snip1477 .title div:before,
+figure.snip1477 .title div:after {
+  width: 2px;
+  height: 800px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+figure.snip1477 .title div:before {
+  top: 10px;
+  right: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+figure.snip1477 .title div:after {
+  bottom: 10px;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+figure.snip1477 h2,
+figure.snip1477 h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+figure.snip1477 h2 {
+  font-weight: 400;
+}
+figure.snip1477 h4 {
+  display: block;
+  font-weight: 700;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  color: #000000;
+}
+figure.snip1477 figcaption {
+  position: absolute;
+  bottom: 42%;
+  left: 25px;
+  text-align: left;
+  opacity: 0;
+  padding: 5px 60px 5px 10px;
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+figure.snip1477 figcaption p {
+  margin: 0;
+}
+figure.snip1477 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+figure.snip1477:hover img,
+figure.snip1477.hover img {
+  zoom: 1;
+  filter: alpha(opacity=35);
+  -webkit-opacity: 0.35;
+  opacity: 0.35;
+}
+figure.snip1477:hover .title:before,
+figure.snip1477.hover .title:before,
+figure.snip1477:hover .title:after,
+figure.snip1477.hover .title:after,
+figure.snip1477:hover .title div:before,
+figure.snip1477.hover .title div:before,
+figure.snip1477:hover .title div:after,
+figure.snip1477.hover .title div:after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+figure.snip1477:hover .title:before,
+figure.snip1477.hover .title:before,
+figure.snip1477:hover .title:after,
+figure.snip1477.hover .title:after {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+figure.snip1477:hover figcaption,
+figure.snip1477.hover figcaption {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+/*-----------------------------------------------------imagenfaro*/
+.bag{ margin-top: 30px;margin-left: 10px;margin-right: 40px; margin-bottom: 10px;}
+
+
+
+
+
+/*-----------------------carta oferta*/
+
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+    &:hover {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border: 1px solid coral;
+      border-radius: 1rem;
+    }
+
+    .flip-card-front {
+      background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%, rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+      color: coral;
+    }
+
+    .flip-card-back {
+      background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%, bisque 40%, rgb(255, 185, 160) 78%);
+      color: white;
+      transform: rotateY(180deg);
+    }
+  }
+}
+.card-container {
+  margin-top: 50px;
+  margin: 20px;
+  width: 50%;
+  height: 775%;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+
+    .front-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+
+      p {
+        font-size: 32px;
+        font-weight: 700;
+        opacity: 1;
+        background: linear-gradient(-45deg, #f89b29 0%, #2F8F9D 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+      }
+    }
+
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      background: linear-gradient(-45deg, #f89b29 0%, #2F8F9D 100%);
+      color: #e8e8e8;
+      padding: 20px;
+      line-height: 1.5;
+      border-radius: 5px;
+      pointer-events: none;
+      transform: translateX(-96%);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+
+      .heading {
+        font-size: 32px;
+        font-weight: 700;
+      }
+    }
+
+    &:hover {
+      .content {
+        transform: translateY(0);
+      }
+
+      .front-content {
+        transform: translateX(-30%);
+      }
+
+      .front-content p {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.progedu {
+  margin-top: 60px;
+}
+/*----------------------------carta oferta*/
+
+
+/*--------------------------------boton*/
+/* Button styles */
+.box {
+  color: #F38322;
+  width: 150px;
+  height: 100px;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* Pseudo-element for the bottom border */
+.box:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+/* Pseudo-element for the top border */
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+/* Hover styles for the button */
+.box:hover {
+  box-shadow: 0 5px 15px #F38322;
+}
+
+/* Hover styles for the bottom pseudo-element */
+.box:hover:before {
+  border-color: #F38322;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+/* Hover styles for the top pseudo-element */
+.box:hover:after {
+  border-color: #F38322;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+/* Button styles */
+button {
+  color: #F38322;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+/*--------------------------boton ver mas*/
