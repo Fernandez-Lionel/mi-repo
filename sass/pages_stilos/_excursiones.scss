@@ -2,9 +2,9 @@
 /*------------------------mainexcursion-------------*/
 
 
-.h1viajes{margin-bottom: 4rem;text-decoration: underline; font-size: 3rem;}
-.h2viajes{margin-bottom:2rem;font-size: 2.5rem;}
-.card-title{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;}
+.h1viajes{margin-bottom: 4rem;text-decoration: underline; font-size: 3rem; text-decoration: none;color:#176B87; padding-top: 100px;}
+.h2viajes{margin-bottom:2rem;font-size: 2.5rem;color: #176B87;margin-left: 20px;}
+.card-title{font-size: 3rem;text-decoration: underline;margin-bottom: 10px;text-decoration: none;}
 
 
 /*------------------------mainexcursion---------------*/
@@ -190,4 +190,45 @@
   
   }
 
-  
+  /* Add this CSS to your existing stylesheet or create a new one */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width) */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Add this CSS to your existing stylesheet or create a new one */
+
+.contact-link {
+  text-align: center;
+}
+
+.contact-link a {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  text-decoration: none;
+  color: blue; /* Change the link color as needed */
+}
+
+/* Apply responsive styles for different screen sizes */
+
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media screen and (max-width: 767px) {
+  .contact-link a {
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+  }
+}
+
+/* For screens larger than 768px (e.g., tablets and desktops) */
+@media screen and (min-width: 768px) {
+  .contact-link a {
+    font-size: 1.5rem; /* Set the font size back to the original value for larger screens */
+  }
+}

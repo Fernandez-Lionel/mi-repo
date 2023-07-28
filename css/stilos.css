@@ -561,17 +561,23 @@ button {
   margin-bottom: 4rem;
   text-decoration: underline;
   font-size: 3rem;
+  text-decoration: none;
+  color: #176B87;
+  padding-top: 100px;
 }
 
 .h2viajes {
   margin-bottom: 2rem;
   font-size: 2.5rem;
+  color: #176B87;
+  margin-left: 20px;
 }
 
 .card-title {
   font-size: 3rem;
   text-decoration: underline;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 /*------------------------mainexcursion---------------*/
@@ -748,6 +754,45 @@ svg:hover .tooltip {
   color: #F6FA70;
 }
 
+/* Add this CSS to your existing stylesheet or create a new one */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width) */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Add this CSS to your existing stylesheet or create a new one */
+.contact-link {
+  text-align: center;
+}
+
+.contact-link a {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  text-decoration: none;
+  color: blue; /* Change the link color as needed */
+}
+
+/* Apply responsive styles for different screen sizes */
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media screen and (max-width: 767px) {
+  .contact-link a {
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+  }
+}
+/* For screens larger than 768px (e.g., tablets and desktops) */
+@media screen and (min-width: 768px) {
+  .contact-link a {
+    font-size: 1.5rem; /* Set the font size back to the original value for larger screens */
+  }
+}
 .textoant {
   background-image: url(../medios/antartida2.0.jpg);
   background-size: cover;
@@ -928,6 +973,23 @@ so that it is smooth among other more minor things */
   margin-right: 20px;
   width: 0.9rem;
   fill: currentColor;
+}
+
+.planmargin {
+  margin: 15px;
+}
+
+.margenant {
+  padding-top: 100px;
+}
+
+.imgant1 {
+  margin-right: 10px;
+}
+
+.imgant2 {
+  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .form-container {
@@ -1179,7 +1241,7 @@ so that it is smooth among other more minor things */
 
 /**/
 .fondformulario {
-  background-image: url(../medios/fondoregistrate.jpg);
+  background-image: url(../logo/lagesmeralda.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: top left right bottom;
@@ -1191,6 +1253,7 @@ so that it is smooth among other more minor things */
   flex-direction: row;
   justify-content: right;
   text-shadow: -4px 1px 10px rgb(255, 243, 243);
+  color: yellow;
 }
 
 .estilonos {
@@ -1251,6 +1314,54 @@ footer a:hover {
   color: #0056b3; /* Ajusta el color del enlace al pasar el mouse según tu preferencia */
 }
 
+.textocontacto {
+  margin-left: 0.1px;
+}
+
+/* Estilos para el contenedor principal */
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 300px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* Estilos para el elemento del lado */
+.elemento-lado {
+  margin-right: 200px;
+  /* Puedes ajustar el tamaño y otros estilos según tus necesidades */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Adjust the maximum width (768px) based on your needs */
+  /* Stack the social icons vertically on smaller screens */
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons .icon {
+    margin-bottom: 10px;
+  }
+}
+/* Additional responsive styles for even smaller screens if needed */
+@media screen and (max-width: 480px) {
+  /* Adjust the maximum width (480px) based on your needs */
+  /* Modify the styles of the form elements to fit smaller screens */
+  .input-group {
+    flex-direction: column;
+  }
+  .input-group label,
+  .input-group input {
+    width: 100%;
+  }
+  .forgot {
+    text-align: right;
+  }
+}
 /*-----------nosotros-------------------*/
 /*titulo*/
 .banner {
@@ -1282,13 +1393,13 @@ p {
 }
 
 .tit4 {
-  font-size: 5rem;
+  font-size: 2rem;
   margin-bottom: 30px;
   text-decoration: underline;
 }
 
 .tit5 {
-  font-size: 5rem;
+  font-size: 2rem;
   margin-bottom: 30px;
   text-decoration: underline;
 }
@@ -1314,6 +1425,11 @@ p {
 
 .estilonos {
   color: white;
+}
+
+.margennos {
+  padding-top: 100px;
+  padding-left: 10px;
 }
 
 .lista {
